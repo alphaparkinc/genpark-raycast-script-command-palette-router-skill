@@ -1,0 +1,36 @@
+{
+  "name": "genpark-raycast-script-command-palette-router-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Fuzzy keyword command palette argument parser and deep-link shortcut dispatcher with keyboard chord acceleration.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "service",
+  "tags": [
+    "raycast",
+    "command-palette",
+    "keyboard-shortcuts",
+    "alfred",
+    "developer-tools"
+  ],
+  "inputs": {
+    "query_string": {
+      "type": "string"
+    },
+    "hotkey_chord": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "routing_id": {
+      "type": "string"
+    },
+    "matched_extension": {
+      "type": "string"
+    },
+    "confidence_score": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
